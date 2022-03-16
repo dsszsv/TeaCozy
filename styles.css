@@ -74,19 +74,21 @@ header{
     align-items: center;
     justify-content: center;
     
+    
 }
 
 .bg-header{
-    height: 700px;   
+      height: 700px;
+      
 }
 
 .caption{
     color: seashell;
-    width: 1050px;
+    position: absolute;
     background: rgb(0, 0, 0);
     font-size:x-large;
-    position: absolute;
     text-align: center;  
+    width: 1050px;
 }
 
 main{
@@ -171,7 +173,17 @@ section{
     background-color:rgba(0, 0, 0, 0.8);
     min-width: 300px;
     line-height: 60px;
+    text-align: center;   
+}
+
+footer{
+    font-size: larger;
+}
+
+.footcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    
-    
+    flex-direction: column;
 }
