@@ -1,5 +1,5 @@
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -13,10 +13,12 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
+	border: 0;	
 	vertical-align: baseline;
+}
+
+h2, h4{
+    margin:5px 0;
 }
 
 body{
@@ -24,18 +26,25 @@ body{
     color: seashell;
     opacity: 0.9;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 22px;
+    
 }
 
 nav{
-    display: fixed;
+    display: absolute;
     border-bottom: 1px solid seashell;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    margin-top: -70px;
+    font-size: 22px;
+    z-index: 10;
 }
 
 .nav-container{
     display:flex;
     justify-content:space-between;
     align-items: center;
+    
 
 }
 .nav-container img{
@@ -55,15 +64,114 @@ nav{
 }
 
 header{
-    margin:0 auto;
+    margin: 70px auto 0px auto;
+  
+}
+
+.header-container{
+   
     display: flex;
     align-items: center;
+    justify-content: center;
+    
 }
 
 .bg-header{
-    height: 700px;
+    height: 700px;   
 }
 
 .caption{
-    z-index: 1;
+    color: seashell;
+    width: 1050px;
+    background: rgb(0, 0, 0);
+    font-size:x-large;
+    position: absolute;
+    text-align: center;  
+}
+
+main{
+    margin: 50px auto 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: seashell;
+    font-size: larger;
+}
+
+.maincontainer{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.imgcontainer{
+    margin-top: 20px;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.imgcontainer img{
+    height: 200px;
+    width: 300px;
+}
+
+.imgbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgbox h4{
+    margin-top: 10px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: seashell;
+    font-size: larger;
+    margin-top: 50px;
+    
+}
+
+.location{
+    background: repeat-y center
+        url(https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg) 
+        ;
+    height: 500px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.location h2{
+    margin-bottom: 15px;
+}
+.boxcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; 
+    margin-bottom: 80px;
+}
+
+.boxlocation{
+    background-color:rgba(0, 0, 0, 0.8);
+    min-width: 300px;
+    line-height: 60px;
+    text-align: center;
+    
+    
 }
